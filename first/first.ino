@@ -89,7 +89,7 @@ void loop() {
 }
 
 void sendMessage() {
-  String msg = "Hello from node ";
+  String msg = "Hello1 from node ";
   msg += mesh.getNodeId();
   msg += " myFreeMemory: " + String(ESP.getFreeHeap());
   mesh.sendBroadcast(msg);
